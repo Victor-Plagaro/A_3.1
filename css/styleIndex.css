@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+header{
+    background-color: #99D8FF;
+    height: 80px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 80px;
+    justify-content: space-evenly;
+}
+nav li{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+nav li:hover{
+    cursor: pointer;
+    font-style: italic;
+    background-color: #5ec1fe;
+    text-decoration: underline;
+}
