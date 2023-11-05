@@ -6,7 +6,7 @@ body{
     font-size: 18px;
 }
 header{
-    background-color: #99D8FF;
+    background-color: #e6e6e6;
     height: 80px;
 }
 nav ul{
@@ -25,6 +25,6 @@ nav li{
 nav li:hover{
     cursor: pointer;
     font-style: italic;
-    background-color: #5ec1fe;
+    background-color: #d1d1d1;
     text-decoration: underline;
 }

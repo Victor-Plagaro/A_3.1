@@ -13,10 +13,10 @@
     <header class="nav_container">
         <nav class="central_nav">
             <ul>
-                <li class="list_nav">Crear producto</li>
-                <li class="list_nav">Consultar listado</li>
-                <li class="list_nav">Modificar producto</li>
-                <li class="list_nav">Eliminar producto</li>
+                <a href="./crear_producto.php"><li class="list_nav">Crear producto</li></a>
+                <a href=""><li class="list_nav">Consultar listado</li></a>
+                <a href=""><li class="list_nav">Modificar producto</li></a>
+                <a href=""><li class="list_nav">Eliminar producto</li></a>
             </ul>
         </nav>
     </header>

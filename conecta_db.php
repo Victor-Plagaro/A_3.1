@@ -23,8 +23,8 @@
         $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "Conexion exitosa";
     } catch (PDOException $e) {
-        echo "Conexio fallisa " . $e->getMessage();
+        echo "Conexion fallida " . $e->getMessage();
     }
 
-    echo "<br>He llegado al final"; //Comprobar la ejecucion el code
+    echo "<br>He llegado al final<br>"; //Comprobar la ejecucion el code
 ?>
