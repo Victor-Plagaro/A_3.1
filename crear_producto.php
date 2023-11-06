@@ -43,8 +43,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion de la tienda online</title>
-    <link rel="stylesheet" href="css/styleIndex.css">
-    <link rel="stylesheet" href="css/styleProducto.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
