@@ -1,10 +1,8 @@
 <?php
-    $servername = "localhost";
-    $username = "mitiendaonline";
-    $password = "";
-    $dbname = "mitiendaonline";
-     // Revisa la conexión a la base de datos
-     include("C://xampp//htdocs//A_3.1//conecta_db.php");
+    //Plantilla encabezado
+    include("C://xampp//htdocs//A_3.1//encabezado.html");
+    // Revisa la conexión a la base de datos
+    include("C://xampp//htdocs//A_3.1//conecta_db.php");
      
     //Consultar
     try{
@@ -44,20 +42,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion de la tienda online</title>
     <link rel="stylesheet" href="./css/styleIndex.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="nav_container">
-        <nav class="central_nav">
-            <ul>
-                <li class="list_nav">Crear producto</li>
-                <li class="list_nav">Consultar listado</li>
-                <li class="list_nav">Modificar producto</li>
-                <li class="list_nav">Eliminar producto</li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <form action="crear_producto.php" method="post" enctype="multipart/form-data">
             <fieldset>

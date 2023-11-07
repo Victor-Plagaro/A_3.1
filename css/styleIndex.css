@@ -22,6 +22,8 @@ nav li{
     height: 80px;
     display: flex;
     align-items: center;
+    color: black;
+    font-weight: 500;
 }
 nav li:hover{
     cursor: pointer;
@@ -75,4 +77,25 @@ input[type="submit"]{
     font-size: 16px;
     font-weight: 500;
     margin-left: 10px;
+}
+/*Style Consultar Producto*/
+table{
+    display: flex;
+    justify-content: center;
+    border-spacing: 40px;
+}
+tbody{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(218, 218, 218);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+th{
+    text-decoration: underline;
+    font-size: 26px;
+}
+td{
+    border-bottom: 2px solid #e4e4e4;
+    font-size: 20px;
 }
