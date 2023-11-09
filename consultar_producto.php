@@ -1,8 +1,8 @@
 <?php
     //Plantilla encabezado
-    include("C://xampp//htdocs//A_3.1//encabezado.html");
+    include("encabezado.html");
     // Revisa la conexión a la base de datos
-    include("C://xampp//htdocs//A_3.1//conecta_db.php");
+    include("conecta_db.php");
      
     //Consultar
     try{
@@ -40,7 +40,7 @@
                         echo("<td>{$filas['id']}</td>");
                         echo("<td>{$filas['Nombre']}</td>");
                         echo("<td>{$filas['Precio']}</td>");
-                        echo("<td>{$filas['Imagen']}</td>");
+                        echo("<td><img src={$filas['Imagen']} width=30px></td>");
                         echo "<td>";
                         switch($filas['Categoría']){
                             case 1:
@@ -58,11 +58,13 @@
 
                         }
                         echo "</td>";
-                        
+                        echo("<td><a href='./modificar_producto.php'><img src='./imagenes_web/edit_icon.svg' alt=Icono de modificar width=30px></a></td>");
+                        echo("<td><a href='./eliminar_producto.php'><img src='./imagenes_web/delete_icon.svg' alt=Icono de eliminar  width=30px></a></td>");
                     echo "</tr>";
                 }
             ?>
         </table>
+        <a href=""><img src="" alt=""></a>
     </main>
 </body>
 </html>
