@@ -40,7 +40,7 @@
                         echo("<td>{$filas['id']}</td>");
                         echo("<td>{$filas['Nombre']}</td>");
                         echo("<td>{$filas['Precio']}</td>");
-                        echo("<td><img src={$filas['Imagen']} width=30px></td>");
+                        echo("<td><img src={$filas['Imagen']} width=90px></td>");
                         echo "<td>";
                         switch($filas['Categoría']){
                             case 1:

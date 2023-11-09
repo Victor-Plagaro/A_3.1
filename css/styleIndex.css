@@ -81,6 +81,7 @@ input[type="submit"]{
 /*Style Consultar Producto*/
 table{
     display: flex;
+    text-align: center;
     justify-content: center;
     border-spacing: 40px;
 }
@@ -98,4 +99,7 @@ th{
 td{
     border-bottom: 2px solid #e4e4e4;
     font-size: 20px;
+    justify-content: end;
+    align-items: center;
+    vertical-align: bottom;
 }
