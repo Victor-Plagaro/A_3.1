@@ -28,9 +28,8 @@ nav li{
 }
 nav li:hover{
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
     background-color: #dddddd;
-    font-style: italic;
     background-color: #d1d1d1;
     text-decoration: underline;
 }
