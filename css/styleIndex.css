@@ -11,6 +11,9 @@ header{
     background-color: #e6e6e6;
     height: 80px;
 }
+nav a{
+    text-decoration-color: black;
+}
 nav ul{
     margin: 0;
     padding: 0;
