@@ -7,7 +7,6 @@ body{
 }
 /*Cabecera de la web*/
 header{
-    background-color: rgb(248, 248, 248);
     background-color: #e6e6e6;
     height: 80px;
 }
@@ -23,13 +22,10 @@ nav li{
     height: 80px;
     display: flex;
     align-items: center;
-    color: black;
-    font-weight: 500;
 }
 nav li:hover{
     cursor: pointer;
-    font-weight: bold;
-    background-color: #dddddd;
+    font-weight:800;
     background-color: #d1d1d1;
     text-decoration: underline;
 }
