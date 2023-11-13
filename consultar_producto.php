@@ -1,8 +1,8 @@
 <?php
     //Plantilla encabezado
-    include("encabezado.html");
+    include("./encabezado.html");
     // Revisa la conexión a la base de datos
-    include("conecta_db.php");
+    include("./conecta_db.php");
      
     //Consultar
     try{
