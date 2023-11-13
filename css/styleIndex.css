@@ -58,6 +58,12 @@ label{
     margin-bottom: 25px;
     font-size: 24px;
     text-decoration-line: underline;
+    font-weight: bold;
+}
+
+.datos{
+    font-weight: normal;
+    text-decoration: none;
 }
 input{
     width: 325px;
@@ -104,4 +110,9 @@ td{
     justify-content: end;
     align-items: center;
     vertical-align: bottom;
+}
+
+.cnc{
+    width: 100px;
+    height: 25px;
 }
