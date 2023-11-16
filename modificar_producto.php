@@ -68,6 +68,10 @@ if (!empty($_GET)) {
 </head>
 <body>
     <main>
+        
+        <form action="">
+
+        </form>
         <form action="modificar_producto.php?id=<?php echo $producto_id; ?>" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend>Datos a modificar</legend>
