@@ -1,22 +1,9 @@
 <?php
     $servername = "localhost";
-    $username = "mitiendaonline";
+    $username = "usuariosOnline";
     $password = "";
-    $db = "mitiendaonline";
-    /**
-     * Mediante MySQLi
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $db);
+    $db = "usuarios";
 
-    // Check connection
-    if($conn -> connect_error){
-        die ("Conexion fallida: " . $conn -> connect_error);
-    }
-    echo "Conexion correcta";
-    */
-    
-    //Uso de PDO. Es mejor porque es versatil y facil migracion a otros gestores DDBB
-    // Create connection
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
         // set the PDO error mode to exception
