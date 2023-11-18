@@ -12,6 +12,5 @@
     } catch (PDOException $e) {
         echo "Conexion fallida " . $e->getMessage();
     }
-
     echo "<br>He llegado al final<br>"; //Comprobar la ejecucion el code
 ?>
