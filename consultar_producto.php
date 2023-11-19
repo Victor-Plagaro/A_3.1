@@ -59,7 +59,7 @@
                         }
                         echo "</td>";
                         echo("<td><a href='./modificar_producto.php?id={$filas['id']}'><img src='./imagenes_web/edit_icon.svg' alt=Icono de modificar width=30px></a></td>");
-                        echo("<td><a href='./eliminar_producto.php'><img src='./imagenes_web/delete_icon.svg' alt=Icono de eliminar  width=30px></a></td>");
+                        echo("<td><a href='./eliminar_producto.php?id={$filas['id']}'><img src='./imagenes_web/delete_icon.svg' alt=Icono de eliminar  width=30px></a></td>");
                     echo "</tr>";
                 }
             ?>
