@@ -1,26 +1,29 @@
 <?php
     // Revisa la conexión a la base de datos
-    require("./conecta_db.php");
-    
-    if(isset($_POST['nombreUsuario'])  && isset($_POST['pswd'])){
-        $nombreUsuario = $_POST['nombreUsuario'];
-        $correoUsuario = $_POST['email'];
-        $contraseñaUsuario = $_POST['pswd'];
+    include("./conecta_db.php");
+    try{
+        if(isset($_POST['nombreUsuario'])  && isset($_POST['pswd'])){
+            $nombreUsuario = $_POST['nombreUsuario'];
+            $correoUsuario = $_POST['email'];
 
-        //Consultar
-        try{
-            $consulta = $conn -> prepare("SELECT contrasena_hash FROM usuarios2 WHERE nombre='$nombreUsuario'");
-            $consulta->execute();
-            $pswdUsuario = $consulta->fetch(PDO::FETCH_ASSOC);
+            session_start();
+            $_SESSION['usuario']= $nombreUsuario;
+
+            //Consultar
+            $sql = $conn -> prepare("SELECT contrasena_hash FROM usuarios2 WHERE nombre='$nombreUsuario'");
+            $sql->execute();
+            $pswdUsuario = $sql->fetch(PDO::FETCH_ASSOC);
             $pswdEncriptada = $pswdUsuario['contrasena_hash'];
-            if(password_verify($contraseñaUsuario, $pswdEncriptada)){
+            print_r($pswdUsuario);
+            if(password_verify($_POST['pswd'],$pswdEncriptada)){
                 echo "Contraseña Correcta";
+                header('Location: ./consultar_productos.php');
             }else{
                 echo "Contraseña Incorrecta";
             }
-        } catch (PDOException $e){
-            echo "Error al recuperar los datos: " . $e->getMessage();
-            die();
-        } 
-    }
+        }
+    }catch (PDOException $e){
+        echo "Error al recuperar los datos: " . $e->getMessage();
+        die();
+    } 
 ?>
