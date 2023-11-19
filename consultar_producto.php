@@ -47,10 +47,10 @@
                                 echo "Camisetas";
                                 break;
                             case 2:
-                                echo "Blusas";
+                                echo "Pantalones";
                                 break;
                             case 3:
-                                echo "Pantalones";
+                                echo "Polos";
                                 break;
                             case 4:
                                 echo "Chaquetas";

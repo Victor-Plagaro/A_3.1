@@ -21,11 +21,10 @@ try{
 if(isset($_POST['campo_nombre']) && isset($_POST['campo_precio']) && isset($_FILES['campo_archivo']['name']) && !empty($_POST['campo_categoria'])) {
     $nombre = $_POST['campo_nombre'];
     $precio = $_POST['campo_precio'];
-    $archivo = $destino.$_FILES['campo_archivo']['name'];
-    $categoria = $_POST['campo_categoria'];
     //Nombre tmp de la img
     $nombre_tmp = $_FILES['campo_archivo']['tmp_name'];
-
+    $archivo = $destino.$_FILES['campo_archivo']['name'];
+    $categoria = $_POST['campo_categoria'];
     // Insertar datos
     try{
         $sql = "INSERT INTO productos (Nombre, Precio, Imagen, Categoría) VALUES ('$nombre', '$precio', '$archivo', '$categoria')";
@@ -53,7 +52,7 @@ if(isset($_POST['campo_nombre']) && isset($_POST['campo_precio']) && isset($_FIL
 </head>
 <body>
 <main>
-    <form action="crear_producto.php" method="post" enctype="multipart/form-data">
+    <form action="crear_producto.php" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Datos del producto</legend>
             <label>Nombre:
