@@ -16,7 +16,6 @@
             <ul>
                 <a href="./crear_producto.php"><li class="list_nav">Crear producto</li></a>
                 <a href="./consultar_producto.php"><li class="list_nav">Consultar listado</li></a>
-                <a href="./modificar_producto.php"><li class="list_nav">Modificar producto</li></a>
                 <a href="./eliminar_producto.php"><li class="list_nav">Eliminar producto</li></a>
             </ul>
             <a href="./disconnectUser.php"><img src="imagenes_web/user_disconnect.png" alt="icono para desloguearse" onclick=""></a>
