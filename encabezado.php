@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,6 +19,7 @@
                 <a href="./modificar_producto.php"><li class="list_nav">Modificar producto</li></a>
                 <a href="./eliminar_producto.php"><li class="list_nav">Eliminar producto</li></a>
             </ul>
+            <a href="./disconnectUser.php"><img src="imagenes_web/user_disconnect.png" alt="icono para desloguearse" onclick=""></a>
         </nav>
     </header>
 </body>

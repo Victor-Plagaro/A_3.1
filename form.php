@@ -9,12 +9,13 @@
 
         //Consultar
         try{
-            $consulta = $conn -> prepare("SELECT contrasena_hash FROM usuarios2 WHERE nombre='$nombreUsuario'");
+            $consulta = $conn -> prepare("SELECT contrasena_hash FROM usuarios WHERE nombre='$nombreUsuario'");
             $consulta->execute();
             $pswdUsuario = $consulta->fetch(PDO::FETCH_ASSOC);
             $pswdEncriptada = $pswdUsuario['contrasena_hash'];
             if(password_verify($contraseñaUsuario, $pswdEncriptada)){
                 echo "Contraseña Correcta";
+                header('Location:./consultar_producto.php');
             }else{
                 echo "Contraseña Incorrecta";
             }

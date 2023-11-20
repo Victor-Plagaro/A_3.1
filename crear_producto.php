@@ -1,6 +1,6 @@
 <?php
 //Plantilla encabezado
-include("./encabezado.html");
+include("./encabezado.php");
 // Revisa la conexión a la base de datos
 include("./conecta_db.php");
 //Establece el directorio de destino.
