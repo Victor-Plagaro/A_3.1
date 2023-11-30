@@ -1,8 +1,8 @@
 <?php
-    if(!empty($_SESSION['usuario'])){
-        session_start();
-    }else{
+    session_start();
+    if(empty($_SESSION['email'])){
         header('Location:./form_login.php');
+        exit();
     }
 ?>
 <!DOCTYPE html>

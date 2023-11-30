@@ -7,6 +7,10 @@
         $correoUsuario = $_POST['email'];
         $contraseñaUsuario = $_POST['pswd'];
 
+        //Guardar la sesion email
+        session_start();
+        $_SESSION['email']=$correoUsuario;
+
         //Consultar
         try{
             $consulta = $conn -> prepare("SELECT contrasena_hash FROM usuarios WHERE nombre='$nombreUsuario'");
