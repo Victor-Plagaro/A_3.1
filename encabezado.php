@@ -1,5 +1,9 @@
 <?php
-    session_start();
+    if(!empty($_SESSION['usuario'])){
+        session_start();
+    }else{
+        header('Location:./form_login.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="es">
