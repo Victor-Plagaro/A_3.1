@@ -11,6 +11,12 @@
 <body>
     <header class="nav_container">
         <nav class="central_nav">
+            <php>
+                if(!empty($_SESSION['usuario'])){
+                    echo "<h3>Sesion Iniciada como {$_COOKIE['nombreUser']}</h3>"
+                }
+
+            </php>
             <ul>
                 <a href="./crear_producto.php"><li class="list_nav">Crear producto</li></a>
                 <a href="./consultar_producto.php"><li class="list_nav">Consultar listado</li></a>
